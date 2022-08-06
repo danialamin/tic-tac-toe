@@ -125,7 +125,7 @@ body {
 }
 
 .message .message_container {
-  background-color: white;
+  background-color: rgb(228, 228, 228);
   position: absolute;
   left: 50%;
   top: 50%;
@@ -140,6 +140,7 @@ body {
   width: 60px;
   align-self: center;
   cursor: pointer;
+  border-radius: 20px;
 }
 
 .message .message_container p {
