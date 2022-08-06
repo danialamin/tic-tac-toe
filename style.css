@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+header {
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-bottom: 1px solid black; */
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+header div {
+  font-size: 3.2rem;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.05);
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.board {
+  margin-top: 30px;
+  transform: translate(-300px, 0);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.container .board div {
+  width: 120px;
+  height: 115px;
+  border: 1.9px solid black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .board div div {
+  border: none;
+  outline: none;
+}
+
+.container .board .one,
+.container .board .two,
+.container .board .three {
+  border-top: none;
+}
+
+.container .board div:nth-child(3n - 2) {
+  border-left: none;
+}
+
+.container .board div:nth-child(3n) {
+  border-right: none;
+}
+
+.container .board .seven,
+.container .board .eight,
+.container .board .nine {
+  border-bottom: none;
+}
+
+.info {
+  transform: translate(-80px, -80px);
+}
+
+.container .info .pl1 {
+  font-size: 2.5rem;
+  font-weight: 10;
+}
+
+.container .info .pl2 {
+  font-size: 2.5rem;
+  font-weight: 10;
+  transform: translate(0, 50px);
+}
+
+.mf {
+  transform: translate(-50px, -80px);
+}
+
+.mf .times {
+  font-size: 5em;
+  transform: translate(10px, -1px);
+}
+
+.mf .CIRCLE {
+  transform: translate(13px, 25px);
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  border: 5px solid black;
+  cursor: text;
+}
+
+body {
+  position: relative;
+}
+
+.message {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+
+  display: none;
+}
+
+.message .message_extras {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.message .message_container {
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.message img {
+  margin-top: 25px;
+  height: 60px;
+  width: 60px;
+  align-self: center;
+  cursor: pointer;
+}
+
+.message .message_container p {
+  font-size: 5rem;
+}
+
+.message .message_container p span {
+  color: red;
+}
+
+.container .board div .addCircle {
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  border: 5px solid black;
+}
+
+.container .board div .addCross {
+  font-size: 6rem;
+  cursor: default;
+}
