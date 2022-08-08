@@ -162,3 +162,30 @@ body {
   font-size: 6rem;
   cursor: default;
 }
+
+@media (max-width: 1200px) {
+  .container {
+    justify-content: space-around;
+  }
+  .board {
+    transform: translate(0, 0);
+  }
+  .info {
+    transform: translate(0, 0);
+  }
+  .mf {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+  }
+  .container .info .pl2 {
+    transform: translate(0, 0);
+  }
+  .container .info {
+    margin-top: 20px;
+  }
+}
