@@ -19,7 +19,7 @@ board.addEventListener("click", function (event) {
 
   if (boxDiv.className === "" && crosses <= circles) {
     boxDiv.innerHTML = document.querySelector(
-      ".container .mf .times"
+      ".container .info .div1 div"
     ).innerHTML;
     boxDiv.classList.add("addCross");
   } else if (boxDiv.className === "" && circles < crosses) {
@@ -39,58 +39,58 @@ board.addEventListener("click", function (event) {
 
   if (arr2[2] == arr2[5] && arr2[2] == arr2[8] && arr2[2] != "") {
     if (arr2[2] == "addCross") {
-      whoWon.innerText = "1";
+      whoWon.innerText = "X";
     } else {
-      whoWon.innerText = "2";
+      whoWon.innerText = "O";
     }
     message.style.display = "flex";
   } else if (arr2[1] == arr2[4] && arr2[1] == arr2[7] && arr2[1] != "") {
     if (arr2[1] == "addCross") {
-      whoWon.innerText = "1";
+      whoWon.innerText = "X";
     } else {
-      whoWon.innerText = "2";
+      whoWon.innerText = "O";
     }
     message.style.display = "flex";
   } else if (arr2[0] == arr2[3] && arr2[0] == arr2[6] && arr2[0] != "") {
     if (arr2[0] == "addCross") {
-      whoWon.innerText = "1";
+      whoWon.innerText = "X";
     } else {
-      whoWon.innerText = "2";
+      whoWon.innerText = "O";
     }
     message.style.display = "flex";
   } else if (arr2[0] == arr2[1] && arr2[0] == arr2[2] && arr2[0] != "") {
     if (arr2[0] == "addCross") {
-      whoWon.innerText = "1";
+      whoWon.innerText = "X";
     } else {
-      whoWon.innerText = "2";
+      whoWon.innerText = "O";
     }
     message.style.display = "flex";
   } else if (arr2[3] == arr2[4] && arr2[3] == arr2[5] && arr2[3] != "") {
     if (arr2[3] == "addCross") {
-      whoWon.innerText = "1";
+      whoWon.innerText = "X";
     } else {
-      whoWon.innerText = "2";
+      whoWon.innerText = "O";
     }
     message.style.display = "flex";
   } else if (arr2[6] == arr2[7] && arr2[6] == arr2[8] && arr2[6] != "") {
     if (arr2[6] == "addCross") {
-      whoWon.innerText = "1";
+      whoWon.innerText = "X";
     } else {
-      whoWon.innerText = "2";
+      whoWon.innerText = "O";
     }
     message.style.display = "flex";
   } else if (arr2[0] == arr2[4] && arr2[0] == arr2[8] && arr2[0] != "") {
     if (arr2[0] == "addCross") {
-      whoWon.innerText = "1";
+      whoWon.innerText = "X";
     } else {
-      whoWon.innerText = "2";
+      whoWon.innerText = "O";
     }
     message.style.display = "flex";
   } else if (arr2[2] == arr2[4] && arr2[2] == arr2[6] && arr2[2] != "") {
     if (arr2[2] == "addCross") {
-      whoWon.innerText = "1";
+      whoWon.innerText = "X";
     } else {
-      whoWon.innerText = "2";
+      whoWon.innerText = "O";
     }
     message.style.display = "flex";
   } else if (arr2.indexOf("") == -1) {
@@ -99,7 +99,7 @@ board.addEventListener("click", function (event) {
   }
 });
 
-const reload = document.querySelector(".message .message_container img");
+const reload = document.querySelector(".message .message_container .img");
 reload.addEventListener("click", function () {
   location.reload();
 });
