@@ -23,7 +23,6 @@ header div {
 
 .container {
   background-color: rgba(0, 0, 0, 0.05);
-  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -213,5 +212,23 @@ body {
 @media (max-height: 550px) {
   .container .info {
     margin-top: 200px;
+  }
+}
+
+@media (max-height: 500px) {
+  .container .info {
+    margin-top: 250px;
+  }
+}
+
+@media (max-height: 450px) {
+  .container .info {
+    margin-top: 300px;
+  }
+}
+
+@media (max-height: 400px) {
+  .container .info {
+    margin-top: 550px;
   }
 }
