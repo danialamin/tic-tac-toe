@@ -113,9 +113,10 @@ body {
 
 .message {
   position: absolute;
-  width: 100vw;
-  height: 100vh;
   top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 
   display: none;
 }
@@ -201,35 +202,5 @@ body {
   }
   .container .board {
     margin-top: 50px;
-  }
-}
-
-@media (max-height: 600px) {
-  .container .info {
-    margin-top: 150px;
-  }
-}
-
-@media (max-height: 550px) {
-  .container .info {
-    margin-top: 200px;
-  }
-}
-
-@media (max-height: 500px) {
-  .container .info {
-    margin-top: 250px;
-  }
-}
-
-@media (max-height: 450px) {
-  .container .info {
-    margin-top: 300px;
-  }
-}
-
-@media (max-height: 400px) {
-  .container .info {
-    margin-top: 550px;
   }
 }
